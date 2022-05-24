@@ -1,20 +1,44 @@
 import React, { useState } from "react";
-import styled from 'styled-components'
+import styled from "styled-components";
 import Button from "../../UI/Button/Button";
 import "./CourseInput.css";
 
 const FormControl = styled.div`
   margin: 0.5rem 0;
+  & label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: ${({invalid})=> (!invalid ? 'red': 'black;')};
+  }
+
+  & label .inValid {
+    color: red;
+  }
+
+  & input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+    line-height: 1.5rem;
+    padding: 0 0.25rem;
+    border-color: ${(invalid)=> (!invalid)? 'salmon' : 'transparent'};
+    background: ${({invalid})=> (!invalid? 'red': '')};
+  }
+
+  ${({className})=> console.log(className) }
 
 `;
+
 
 const CourseInput = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
   const [isValid, setIsValid] = useState(false);
   const goalInputChangeHandler = (event) => {
-    const value =event.target.value;
-    if(value.trim().length > 0){
-      setIsValid(true)
+    const value = event.target.value;
+    if (value.trim().length > 0) {
+      setIsValid(true);
     }
     setEnteredValue(event.target.value);
   };
@@ -26,14 +50,18 @@ const CourseInput = (props) => {
       return;
     }
     props.onAddGoal(enteredValue);
-    setEnteredValue('')
+    setEnteredValue("");
   };
 
   return (
     <form onSubmit={formSubmitHandler}>
-      <FormControl>
+      <FormControl invalid={isValid}>
         <label>Course Goal</label>
-        <input type="text" onChange={goalInputChangeHandler} value={enteredValue}/>
+        <input
+          type="text"
+          onChange={goalInputChangeHandler}
+          value={enteredValue}
+        />
       </FormControl>
       <Button type="submit">Add Goal</Button>
     </form>
