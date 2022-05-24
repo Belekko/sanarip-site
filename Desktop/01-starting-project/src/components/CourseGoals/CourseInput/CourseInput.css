@@ -17,6 +17,11 @@
   padding: 0 0.25rem;
 }
 
+.form-control.inValid input{
+  border-color: red;
+  background: salmon
+}
+
 .form-control input:focus {
   outline: none;
   background: #fad0ec;
