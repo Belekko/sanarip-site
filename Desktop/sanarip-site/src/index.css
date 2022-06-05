@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@400;500&family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Andika", sans-serif;
 }
 body {
-  background: rgb(245,239,192);
-background: linear-gradient(0deg, rgba(245,239,192,1) 0%, rgba(146,152,222,0.5130427170868348) 35%, rgba(255,255,255,1) 100%);
-  font-family: "Roboto", sans-serif;
+  background: rgb(245, 239, 192);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 239, 192, 1) 0%,
+    rgba(146, 152, 222, 0.5130427170868348) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
   height: 100%;
 }
