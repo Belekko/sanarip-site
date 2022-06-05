@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sanarip-site/static/css/main.f5fc4cd9.css",
-    "main.js": "/sanarip-site/static/js/main.19c5d7f0.js",
+    "main.css": "/sanarip-site/static/css/main.87a485a6.css",
+    "main.js": "/sanarip-site/static/js/main.5e20ad51.js",
     "static/media/4.jpeg": "/sanarip-site/static/media/4.0ac276930b9e187974bb.jpeg",
     "static/media/1.jpeg": "/sanarip-site/static/media/1.b763fdb5d4fc8e6d0a2b.jpeg",
     "static/media/2.jpeg": "/sanarip-site/static/media/2.ff25ad955f3b0e2f14d3.jpeg",
     "index.html": "/sanarip-site/index.html",
-    "main.f5fc4cd9.css.map": "/sanarip-site/static/css/main.f5fc4cd9.css.map",
-    "main.19c5d7f0.js.map": "/sanarip-site/static/js/main.19c5d7f0.js.map"
+    "main.87a485a6.css.map": "/sanarip-site/static/css/main.87a485a6.css.map",
+    "main.5e20ad51.js.map": "/sanarip-site/static/js/main.5e20ad51.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5fc4cd9.css",
-    "static/js/main.19c5d7f0.js"
+    "static/css/main.87a485a6.css",
+    "static/js/main.5e20ad51.js"
   ]
 }
